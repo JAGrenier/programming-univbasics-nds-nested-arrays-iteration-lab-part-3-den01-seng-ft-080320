@@ -13,7 +13,7 @@ while row_index < src.length do
    end
    element_index += 1
   end
-array_of_strings<<src[row_index][element_index].join('')
+array_of_strings<<src[row_index][element_index].join("")
   row_index +=1
 end
 end
