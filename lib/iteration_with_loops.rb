@@ -10,11 +10,10 @@ while row_index < src.length do
   #p src[count]
  while element_index <src[row_index].count do
    if src[row_index][element_index].class== String
-
    end
    element_index += 1
   end
-#  array_of_strings<<
+array_of_strings<<src[row_index][element_index].join('')
   row_index +=1
 end
 end
