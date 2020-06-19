@@ -10,7 +10,7 @@ while row_index < src.length do
   #p src[count]
  while element_index <src[row_index].count do
    if src[row_index][element_index].class == String
-     array_of_strings<<src[row_index][element_index].to_s
+     array_of_strings<<src[row_index][element_index].to_str
     # binding.pry
    end
    element_index += 1
