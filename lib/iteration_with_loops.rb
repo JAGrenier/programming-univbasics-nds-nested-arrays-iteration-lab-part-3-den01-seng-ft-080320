@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 
 def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
@@ -11,6 +11,7 @@ while row_index < src.length do
  while element_index <src[row_index].count do
    if src[row_index][element_index].class == String
      array_of_strings<<src[row_index][element_index]
+     binding.pry
    end
    element_index += 1
   end
