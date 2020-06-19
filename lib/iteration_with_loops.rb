@@ -9,11 +9,12 @@ while row_index < src.length do
   element_index= 0
   #p src[count]
  while element_index <src[row_index].count do
-   if src[row_index][element_index].is_a?String
+   if src[row_index][element_index].class == String
+     array_of_strings<<src[row_index][element_index]
    end
    element_index += 1
   end
-array_of_strings<<src[row_index][element_index]
+
   row_index +=1
 end
 end
